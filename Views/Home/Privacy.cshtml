@@ -1,0 +1,247 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: #D8BFD8;
+            color: #000;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+            .card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            object-fit: cover;
+            height: 200px;
+        }
+
+        .card-body {
+            background-color: #fff;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            color: #000;
+        }
+
+        .card-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-text {
+            margin-bottom: 0.5rem;
+        }
+
+        .lead {
+            font-weight: 300;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+
+            .section h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            .section p {
+                font-size: 1.1rem;
+            }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+            .social-links a {
+                margin: 0 10px;
+                text-decoration: none;
+                color: #000;
+                font-size: 24px; 
+                transition: color 0.3s;
+            }
+
+                .social-links a:hover {
+                    color: #007bff; 
+                }
+
+            .social-links .fa-facebook-f {
+                color: #4267B2; 
+            }
+
+            .social-links .fa-twitter {
+                color: #1DA1F2; 
+            }
+
+            .social-links .fa-linkedin-in {
+                color: #0077B5;
+            }
+
+            .social-links .fa-instagram {
+                color: #C13584;
+            }
+
+            .social-links .fa-github {
+                color: #333; 
+            }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-4">@ViewData["Title"]</h1>
+            <p class="lead">Learn more about our company, mission, and team.</p>
+        </div>
+
+        <hr />
+
+        <div class="section text-center">
+            <h2>Our Mission</h2>
+            <p>Our mission is to deliver exceptional services and solutions that exceed our clients' expectations. We are dedicated to fostering innovation, embracing challenges, and driving positive change through our work. Our team is committed to excellence, integrity, and creating lasting value for our clients and community.</p>
+        </div>
+
+        <div class="section text-center">
+            <h2>Follow Us</h2>
+            <p>Stay connected with us on social media:</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/cdacmumbai/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://x.com/i/flow/login?redirect_after_login=%2Fcdacmumbai" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/cdac-mumbai-education-and-training-4b26111ba/?originalSubdomain=in" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/cdac_mumbai/?hl=en" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Our Team</h2>
+                <p>We have a diverse team of skilled professionals dedicated to achieving excellence in every project. Meet our team and learn about their expertise and contributions.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4 justify-content-center">
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="~/images/Mansi%20A.jpg" class="card-img-top" alt="Mansi Aggarwal">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mansi Aggarwal</h5>
+                        <p class="card-text">mansisinghal63@gmail.com<br>+91 7015545877</p>
+                        <div class="social-links">
+                            <a href="https://github.com/mansisinghalgithub" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mansi0025/" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="~/images/Kajal.jpg" class="card-img-top" alt="Kajal Rajput">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Kajal Rajput</h5>
+                        <p class="card-text">krajput0511@gmail.com<br>+91 7057709092</p>
+                        <div class="social-links">
+                            <a href="https://github.com/Kajal-Rajput-05" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kajal-rajput-a90039239/" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="~/images/Sakshi.jpeg" class="card-img-top" alt="Sakshi Thele">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sakshi Thele</h5>
+                        <p class="card-text">sakshithele@gmail.com<br>+91 7559376334</p>
+                        <div class="social-links">
+                            <a href="https://github.com/Sakshi-Thele" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sakshi-thele-8b5005319" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="~/images/Srikant.jpg" class="card-img-top" alt="Shrikant Mane">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Shrikant Mane</h5>
+                        <p class="card-text">shrikantgmane08@gmail.com<br>+91 7875371607</p>
+                        <div class="social-links">
+                            <a href="https://github.com/shrikant" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/shrikant" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="~/images/Onkar.jpg" class="card-img-top" alt="Onkar Jadhav">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Onkar Jadhav</h5>
+                        <p class="card-text">onkarjadhav2462000@gmail.com<br>+91 9527750339</p>
+                        <div class="social-links">
+                            <a href="https://github.com/OnkarJadhav24" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/onkar-jadhav-00b41824b/" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
